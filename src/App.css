@@ -1,0 +1,3221 @@
+/* Initial styling */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish&family=Quicksand&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  font-family: merriweather, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100% !important;
+}
+
+.container {
+  padding: 0 18.5rem;
+}
+
+/* Home styling */
+
+.home {
+  font-size: 1.4rem;
+  background: whitesmoke;
+  background: rgb(17, 154, 191);
+  padding: 0 20.5rem;
+  padding-bottom: 10rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5vh;
+  font-size: 1.6rem;
+  background: gainsboro;
+  padding: 0 19.5rem;
+  height: 10vh;
+  background: rgb(0, 0, 0);
+}
+
+.cart-svg {
+  color: white;
+  height: 3rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-text {
+  font-family: merriweather, serif;
+  letter-spacing: 0.2rem;
+}
+
+.logo-text a {
+  color: white;
+  text-decoration: none;
+  font-family: merriweather, serif;
+}
+
+.home-header {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.list-items {
+  display: flex;
+  width: 18vw;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 0.7rem;
+}
+
+.list-items a,
+.login a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.stk {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.login {
+  padding-top: 0.7rem;
+}
+
+.others {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+}
+
+.mobile {
+  display: none;
+}
+
+.home-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-img {
+  height: 75rem;
+  width: 70rem;
+  padding: 2rem 0 0 3rem;
+}
+
+.store-img-div {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding-top: 10vh;
+  /* width: 40rem; */
+}
+
+.start {
+  padding: 20vh 0 5vh 0;
+  font-size: 6.8rem;
+  font-weight: 700;
+}
+
+.start-para {
+  line-height: 3.2rem;
+  padding-bottom: 5vh;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+.header-btn {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  padding: 0.6rem;
+  width: 20rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 0.1rem solid white;
+  border-radius: 0.7rem;
+  transition: background 300ms ease-in-out;
+}
+
+.header-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Typing effect */
+:root {
+  --cream: #eaecef;
+  --black: #3e4147;
+  --orange: #cc4425;
+}
+
+.typed-text {
+  color: var(--orange);
+}
+.cursor {
+  width: 3px;
+  background: var(--black);
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background: var(--black);
+  }
+  50% {
+    background: var(--cream);
+  }
+  100% {
+    background: var(--black);
+  }
+}
+
+/* Get started btn */
+
+.get-started,
+.learn-more-btn {
+  font-size: 1.6rem;
+  padding: 1.8rem;
+  width: 22.5rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  transition: 200ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 10px;
+}
+
+/* Anywhere component */
+
+.anywhere {
+  padding: 10rem 17.5rem;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.anywhere-first {
+  padding-bottom: 3rem;
+}
+
+.anywhere-sec {
+  padding: 3rem 17.5rem;
+}
+
+.a-img {
+  display: none;
+}
+
+.all-img {
+  width: 63rem;
+  height: 73rem;
+}
+
+.anywhere-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7rem;
+}
+
+.any-txt {
+  padding-left: 5rem;
+}
+
+.anywhere-top {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  color: #3e4147;
+}
+
+.anywhere-para {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
+}
+
+/* Learn More styling */
+
+.learn-more {
+  display: flex;
+  transition: all 300ms ease-in-out;
+}
+
+.learn-more-para {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 0.15rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom 300ms ease-in-out;
+}
+
+.learn-more:hover {
+  color: rgb(48, 48, 48);
+}
+
+.learn-more:hover .arrow {
+  transform: translateX(1rem);
+}
+
+.learn-more-para:hover {
+  padding-bottom: 0.15rem;
+  border-bottom: 0.2rem solid rgb(255, 129, 129);
+}
+
+.arrow {
+  padding: 0.5rem 0 0 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.arrow:hover {
+  transform: translateX(1rem);
+}
+
+/* Grow faster component */
+
+.faster-img {
+  width: 73rem;
+  height: 60rem;
+}
+
+.faster-text {
+  padding: 0 7rem 0 0;
+}
+
+/* SmallBiz styling */
+
+.technical-img {
+  padding-top: 13rem;
+}
+
+.te-img {
+  display: none;
+}
+
+.small-biz {
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-text {
+  margin-top: 10rem;
+}
+
+/* Services styling */
+
+.services {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15rem 12rem 15rem;
+  position: relative;
+}
+
+.sell-top {
+  text-align: center;
+  font-size: 4.8rem;
+  padding: 5vh 0;
+  color: #3e4147;
+}
+
+.top-sell {
+  padding: 15rem 0rem 10rem 0;
+  font-size: 4.8rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 3.5rem;
+  background: white;
+  margin: 1.5rem;
+  border: 1px solid gainsboro;
+  border-radius: 1rem;
+  height: 45vh;
+  width: 28rem;
+  font-size: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+  background: rgb(241, 238, 238);
+}
+
+.card:hover .arrow {
+  transform: translateX(1rem);
+}
+
+.card-top {
+  padding: 1rem 0 3rem 0;
+}
+
+.card-text {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  padding-bottom: 5rem;
+}
+.txt {
+  padding-top: 0.8rem;
+}
+
+.facebook-top {
+  color: rgb(59, 89, 152);
+}
+
+.insta {
+  width: 8rem;
+  height: 4rem;
+}
+
+.amazon {
+  width: 8rem;
+  height: 5rem;
+}
+
+.jumia-logo,
+.google-logo,
+.mail {
+  width: 12rem;
+}
+
+.titan-logo {
+  color: rgb(44, 43, 43);
+}
+
+.sell-today {
+  font-size: 4.8rem;
+  font-weight: 600;
+  padding: 5rem 0;
+}
+
+.services-btn {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1.8rem;
+  width: 25rem;
+  background: rgb(253, 208, 0);
+  color: black;
+  border: none;
+  border-radius: 0.7rem;
+  transition: 200ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 10px;
+}
+
+.services-btn:hover,
+.get-started:hover,
+.learn-more-btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+}
+
+.go-home {
+  position: relative;
+  padding-top: 3rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.chev {
+  font-size: 4.2rem;
+  color: #000;
+  animation: up 2s infinite;
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+/* Footer styling */
+
+.footer {
+  height: 45rem;
+  background: black;
+  padding: 5vh 20.5rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.footer-top {
+  padding-bottom: 5vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.right {
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.right a {
+  color: rgb(101, 110, 119);
+}
+
+.iconify {
+  font-size: 4rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding-top: 3rem;
+}
+
+.footer-headers {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  letter-spacing: 0.1rem;
+  color: rgb(101, 110, 119);
+}
+
+.titan-name {
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+  color: rgb(101, 110, 119);
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  line-height: 3.2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.footer-link:hover,
+.footer p:hover {
+  color: rgb(79, 133, 79);
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: rgb(223, 224, 211);
+}
+
+.bottom-left {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-right {
+  padding-top: 2rem;
+}
+
+.kenya-top {
+  padding-bottom: 1rem;
+}
+
+.kenya {
+  float: left;
+  padding: 0 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.flag {
+  width: 3rem;
+  height: 2rem;
+}
+
+.footer-badge {
+  display: none;
+}
+/* Facebook components */
+
+.love-this {
+  padding-top: 15vh;
+  font-size: 1.8rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fourth-img {
+  width: 60rem;
+  height: 57rem;
+  padding-left: 3rem;
+}
+
+.facebook-home {
+  padding: 10rem 15rem 5rem 0;
+}
+
+.facebook-start {
+  font-size: 4.8rem;
+  padding: 0 0 3rem 0;
+}
+
+.facebook-customers {
+  padding: 5rem 15.5rem;
+  height: 30.5rem;
+  width: 100%;
+  background: rgb(7, 115, 246);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-items {
+  display: flex;
+}
+
+.facebook-numbers {
+  display: flex;
+}
+
+.double-para {
+  width: 8rem;
+  padding: 2.5rem;
+  font-size: 2.2rem;
+}
+
+.billion {
+  font-size: 8.8rem;
+}
+
+.facebook-separator {
+  border-right: 1px solid white;
+  padding: 0 4rem;
+}
+
+.facebook-para {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  width: 33rem;
+  padding-left: 4rem;
+}
+
+.facebook-second {
+  display: flex;
+  padding: 7rem 0;
+  width: 100%;
+}
+
+.second-img {
+  width: 45rem;
+  height: 42rem;
+}
+
+.facebook-manage {
+  padding: 10rem;
+  padding-top: 3rem;
+}
+
+.facebook-manage h1 {
+  font-size: 4.8rem;
+}
+
+.facebook-manage p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-top: 3rem;
+}
+
+.zero-cost {
+  height: 37.5rem;
+  background: rgb(13, 13, 13);
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.zero-cost div {
+  padding-top: 8rem;
+}
+
+.zero-cost h1 {
+  font-size: 4.8rem;
+}
+
+.zero-cost p,
+.zero-cost span {
+  padding: 3rem 0 1rem 0;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.third-para {
+  padding: 0 3rem;
+}
+
+.facebook-advert {
+  display: flex;
+  padding: 10rem 0;
+  justify-content: space-between;
+}
+
+.third-img {
+  width: 57rem;
+  height: 46rem;
+}
+
+.advert-para {
+  padding: 7rem 15rem 0 0;
+}
+
+.advert-para h1,
+.connect-para h1 {
+  font-size: 4.8rem;
+  padding: 3rem 0;
+}
+
+.advert-para p,
+.connect-para p {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
+}
+
+.facebook-connect {
+  display: flex;
+}
+
+.f-connect {
+  display: none;
+}
+
+.connect-para {
+  padding: 5rem 0 5rem 10rem;
+}
+
+.insta-facebook {
+  padding-top: 4rem;
+}
+
+/* Sell Everywhere component */
+
+.sell-everywhere {
+  padding-bottom: 10rem;
+  padding-top: 7.5rem;
+  height: 38.5rem;
+}
+
+.everywhere-top {
+  text-align: center;
+  font-size: 4.8rem;
+  padding-bottom: 7rem;
+}
+
+.everywhere-reps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.everywhere-reps div {
+  transition: all 300ms ease-in-out;
+}
+
+.everywhere-reps div:hover {
+  transform: scale(1.2);
+}
+
+.rep-img {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+.insta-icon {
+  margin-top: 1rem;
+}
+
+.facebook-rep {
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  color: rgb(26, 24, 24);
+}
+
+/* Facebook CTA component */
+
+.facebook-cta {
+  height: 40rem;
+  background: rgb(7, 115, 246);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.facebook-cta h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.facebook-cta p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.facebook-last {
+  padding-bottom: 3rem;
+}
+
+/* Intagram page styling */
+
+.instagram {
+  padding-top: 12.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+}
+
+.insta-home {
+  height: 55rem;
+  width: 50rem;
+  margin-left: 5rem;
+}
+
+.insta-logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.invisible-insta {
+  display: none;
+}
+
+.insta-right {
+  padding-left: 10rem;
+  width: 52.5rem;
+}
+
+.instagram h1 {
+  font-size: 4.8rem;
+  padding: 2rem 0;
+}
+
+.insta-right span {
+  color: rgb(245, 83, 152);
+}
+
+.insta-second,
+.insta-third {
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+
+  padding: 10rem 18.5rem;
+  display: flex;
+  color: white;
+}
+
+.insta-images {
+  display: flex;
+}
+
+.insta-phone {
+  height: 45rem;
+  width: 25rem;
+  margin-left: 2rem;
+}
+
+.insta-second h1 {
+  font-size: 4.8rem;
+  padding: 3rem 0;
+}
+
+.sells-para {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-style: italic;
+  padding-bottom: 3rem;
+}
+
+.insta-second-left {
+  padding: 8rem 5rem 0 0;
+}
+
+.insta-images small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.insta-images small p {
+  padding-left: 1rem;
+  font-style: normal;
+}
+
+.insta-gif {
+  height: 60rem;
+  width: 30rem;
+  border-radius: 10rem;
+}
+
+.insta-sell {
+  padding: 7.5rem 18.5rem;
+  background: whitesmoke;
+}
+
+.insta-sell h1 {
+  text-align: center;
+  font-size: 4.8rem;
+}
+
+.insta-paras {
+  display: flex;
+  padding: 7rem 0 5rem 0;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.insta-para-left {
+  width: 70rem;
+  padding-right: 2rem;
+}
+
+.insta-para-right {
+  width: 70rem;
+  padding-left: 2rem;
+}
+
+/* Amazon page styling */
+
+.amazon-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 0 0rem 18.5rem;
+}
+
+.amazon-first-section {
+  margin-top: 10rem;
+  width: 45rem;
+}
+
+.amazon-first-section h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.amazon-first-section p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.amazon-first-images {
+  display: flex;
+  background: rgb(240, 166, 28);
+  padding: 3rem 0 3rem 3rem;
+}
+
+.amazon-phone {
+  height: 40rem;
+  width: 24rem;
+  margin-top: 10rem;
+}
+
+.amazon-table {
+  width: 50rem;
+  height: 50rem;
+}
+
+.amazon-second {
+  padding: 10rem 18.5rem;
+  display: flex;
+  background: whitesmoke;
+}
+
+.control-img {
+  width: 60.5rem;
+  height: 60rem;
+  margin-right: 3rem;
+}
+
+.amazon-access {
+  padding-top: 5rem;
+}
+
+.amazon-access h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.amazon-access h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.amazon-access p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.amazon-third {
+  padding: 3rem 0;
+  height: 35.5rem;
+  background: rgb(240, 166, 28);
+  text-align: center;
+  align-items: center;
+}
+
+.amazon-third h1 {
+  font-size: 4.8rem;
+  padding: 4rem 0 3rem 0;
+}
+
+/* Titan Market component */
+
+.titan-first {
+  background-image: linear-gradient(
+    to right,
+    rgb(28, 101, 157) 0%,
+    rgb(65, 199, 162) 100%
+  );
+  padding-top: 17.5rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.titan-home {
+  width: 40rem;
+  height: 40rem;
+}
+.t-home {
+  display: none;
+}
+
+.titan-first h1 {
+  font-size: 4.8rem;
+  padding: 2rem 0 3rem 3rem;
+}
+
+.titan-first p {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.badge {
+  height: 10rem;
+  width: 25rem;
+  margin-left: 1.7rem;
+}
+
+.titan-second,
+.titan-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+}
+
+.titan-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titan-image {
+  height: 40rem;
+  width: 20rem;
+  border-radius: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  transition: all 300ms ease-in-out;
+}
+
+.titan-image:hover {
+  transform: scale(1.1);
+}
+
+.titan-second-first h1,
+.titan-third h1 {
+  text-align: center;
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.titan-second-first p,
+.titan-third p {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 4rem;
+}
+
+.titan-cover-img {
+  border-radius: 1rem;
+}
+
+.titan-third {
+  background: whitesmoke;
+}
+
+.titan-fourth {
+  background: white;
+}
+
+/* Shopify component styling */
+
+.shopify-first {
+  display: flex;
+  padding: 12.5rem 0 7rem 18.5rem;
+  background: rgb(5, 74, 73);
+  color: white;
+}
+
+.shopify-first h1 {
+  color: rgb(71, 180, 187);
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem 0.5rem;
+}
+
+.shopify-first h2 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+  width: 55rem;
+}
+
+.shopify-first p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 5rem;
+}
+
+.shopify-home-img {
+  margin-left: 15rem;
+}
+.shopify-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 18.5rem;
+}
+
+.shopify-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+.shopify-second h2 {
+  font-size: 2rem;
+}
+
+.shopify-second ul {
+  font-size: 1.4rem;
+  padding: 3rem 0 0 3rem;
+}
+
+.shopify-second ul h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+}
+
+.shopify-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35.5rem;
+  background: #054a49;
+  color: white;
+}
+
+.shopify-third h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+/* Google component styling */
+
+.google-first {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(243, 239, 236);
+}
+
+.google-first h1 {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 4.8rem;
+}
+
+.google-first img {
+  width: 100%;
+  height: 55rem;
+}
+
+.google-second {
+  display: flex;
+  padding: 7rem 18.5rem;
+  background: rgb(4, 132, 214);
+}
+
+.google-second h1,
+.google-third h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.google-second p,
+.google-third p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.google-second div:nth-child(1) {
+  padding: 7rem 10rem 0 0;
+}
+
+.google-second img {
+  height: 50rem;
+  width: 50rem;
+}
+
+.google-third {
+  display: flex;
+  padding: 7rem 18.5rem;
+  background: whitesmoke;
+}
+
+.retail-div,
+.unnamed-div,
+.airbnb-div,
+.control-img-div,
+.automated-div-first {
+  display: none;
+}
+
+.google-third img {
+  height: 50rem;
+  width: 50rem;
+}
+
+.google-third div:nth-child(2) {
+  padding: 7rem 0 0 10rem;
+}
+
+.google-fourth {
+  display: flex;
+  padding: 7rem 18.5rem;
+  background-color: rgb(248, 248, 248);
+}
+
+.google-fourth img {
+  width: 60rem;
+  height: 60rem;
+  margin-right: 5rem;
+}
+
+.google-fourth-second {
+  padding: 10rem 0 0 10rem;
+}
+
+.google-fourth-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.google-fourth-second ul {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding: 0 0 3rem 3rem;
+}
+
+.google-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 47rem;
+}
+
+.learn-more-btn {
+  background: rgb(247, 175, 6);
+}
+
+/* Airbnb component styling */
+
+.airbnb-first {
+  padding: 15rem 24.5rem;
+  display: flex;
+}
+
+.airbnb-first-img {
+  height: 60rem;
+  width: 50rem;
+  border-radius: 1rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.airbnb-first-logo {
+  height: 15rem;
+  width: 22.5rem;
+}
+
+.airbnb-first-second {
+  padding: 10rem 0 0 10rem;
+}
+
+.airbnb-first-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.airbnb-second {
+  display: flex;
+  padding: 7rem 18.5rem;
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+}
+
+.airbnb-second div:nth-child(1) {
+  padding: 5rem 10rem 0 0;
+}
+
+.airbnb-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.airbnb-second p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.airbnb-second img {
+  border-radius: 1rem;
+}
+
+/* Jumia page styling */
+
+.jumia-first {
+  padding: 20rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(246, 140, 30);
+}
+
+.jumia-second {
+  padding: 7rem 0;
+  height: 38.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: whitesmoke;
+}
+
+.jumia-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.jumia-third {
+  display: flex;
+  padding: 15rem 18.5rem;
+  background: rgb(219, 70, 100);
+}
+
+.jumia-third-second {
+  padding: 0rem 0 0 10rem;
+}
+
+.jumia-third-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.jumia-third-second p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+/* Mailchimp component styling */
+
+.mailchimp-first {
+  padding: 15rem 18.5rem;
+  display: flex;
+  background: rgb(250, 224, 83);
+}
+
+.mailchimp-first img {
+  height: 50rem;
+  width: 65rem;
+}
+
+.mailchimp-first h1,
+.mailchimp-third h1 {
+  font-size: 4.8rem;
+  padding: 7rem 0 3rem 0;
+}
+
+.mailchimp-first p,
+.mailchimp-third p,
+.mailchimp-fourth p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.mailchimp-italic {
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.mailchimp-second {
+  display: flex;
+  height: 38.5rem;
+  background: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailchimp-third {
+  display: flex;
+  padding: 10rem 18.5rem;
+  background: rgb(235, 248, 255);
+}
+
+.mailchimp-third img {
+  height: 50rem;
+  width: 65rem;
+}
+
+.mailchimp-third div:nth-child(2) {
+  padding-left: 5rem;
+}
+
+.mailchimp-fourth {
+  display: flex;
+  flex-direction: column;
+  height: 38.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailchimp-fourth h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.mailchimp-fourth p {
+  text-align: center;
+}
+
+/* Website component styling */
+
+.website-first {
+  padding: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(139, 195, 74);
+}
+
+.website-first img {
+  width: 90rem;
+  height: 60rem;
+}
+
+.website-first p {
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  padding: 2rem 0;
+}
+
+.website-first h1 {
+  font-size: 6.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.website-second {
+  display: flex;
+  padding: 10rem 18.5rem;
+}
+
+.website-second div:nth-child(1) {
+  padding: 10rem 10rem 0 0;
+}
+
+.website-second h1,
+.website-third h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.website-second p,
+.website-third p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.website-third {
+  display: flex;
+  flex-direction: column;
+  height: 38.5rem;
+  background: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Pricing.js component styling */
+
+.pricing-first {
+  padding: 15rem 18.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pricing-first h1 {
+  font-size: 5.8rem;
+  padding-bottom: 3rem;
+  color: #3e4147;
+}
+
+.pricing-first p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem 0;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.pricing-card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  background: white;
+  border-radius: 1rem;
+  height: 55rem;
+  width: 30rem;
+  margin: 2rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+}
+
+.pricing-card h1:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.pricing-card h1:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+
+.pricing-card p {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.card-border {
+  border-bottom: 0.1rem solid gainsboro;
+  margin-bottom: 2rem;
+}
+
+.pricing-card button {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 4rem;
+  width: 20rem;
+  transition: all 300ms ease-in-out;
+}
+
+.pricing-card small {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.pricing-second {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-second h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.pricing-second p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.pricing-second button {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  width: 20rem;
+  transition: all 300ms ease-in-out;
+}
+
+.pricing-card button:hover,
+.pricing-second button:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+}
+
+/* Help.js component styling */
+
+.help-first {
+  display: flex;
+  justify-content: center;
+  font-size: 2.8rem;
+  padding: 15rem 18.5rem;
+  padding-bottom: 10rem;
+  color: #3e4147;
+}
+
+.help-second {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 18.5rem;
+  background: whitesmoke;
+}
+
+.help-card {
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 40rem;
+  width: 30rem;
+  font-size: 1.8rem;
+  margin: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.help-card:hover {
+  background: rgb(241, 238, 238);
+  transform: scale(1.1);
+}
+
+.help-card div {
+  padding-bottom: 2rem;
+}
+.halp {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.mailto,
+.tel {
+  text-decoration: none;
+  color: black;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 18.5rem;
+  text-align: center;
+}
+
+.social-first {
+  display: flex;
+  margin: 2rem;
+}
+
+.social-para h1 {
+  font-size: 4.8rem;
+  padding-bottom: 3rem;
+}
+
+.social-para p {
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+}
+
+.social-first div {
+  margin: 1.5rem;
+}
+
+.linked {
+  background-color: gainsboro;
+}
+
+/* Signup.js component styling */
+
+.sign-up {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(60, 13, 153);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: space-between;
+  background: #faf5ff;
+  padding: 4rem;
+  border-radius: 1rem;
+  max-height: 100vh;
+}
+
+.border-right {
+  border-right: 1px solid gainsboro;
+}
+
+.sign-up-first {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sign-up-second {
+  background-color: #faf5ff;
+}
+
+.sign-up-second img {
+  margin-left: 2rem;
+}
+
+.sign-up-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.or {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-first h1 {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.sign-up-first h2 {
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+  font-weight: 400;
+}
+
+.sign-up-btns button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.sign-up-btns button img,
+.user {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+}
+
+.tiny {
+  border-bottom: 1px solid rgb(233, 230, 230);
+  margin-right: 1rem;
+  width: 10rem;
+}
+.tiny2 {
+  border-bottom: 1px solid rgb(233, 230, 230);
+  margin-left: 1rem;
+  width: 10rem;
+}
+
+.or-text {
+  font-size: 1.4rem;
+}
+
+.form input {
+  padding: 1.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #efefef;
+  width: 30rem;
+}
+
+.form button {
+  display: flex;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0 2rem 1rem;
+  width: 30rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  color: white;
+  background-color: rgb(60, 13, 153);
+  font-size: 1.5rem;
+  transition: background-color 300ms ease-in-out;
+}
+.form button:hover,
+.form button:focus {
+  background-color: rgb(78, 37, 161);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-para {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.form-para a {
+  text-decoration: none;
+}
+
+.invisible {
+  visibility: hidden;
+  display: none;
+}
+
+/* Terms Of Service styling */
+
+.terms-container {
+  padding: 10rem 18.5rem;
+}
+
+.terms-container {
+  padding-top: 15rem;
+}
+
+.terms-container h1 {
+  font-size: 4.2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+.terms-container h2 {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.terms-container h3 {
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.terms-container ul {
+  padding-left: 3rem;
+}
+
+.terms-container p,
+.terms-container li {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  padding-bottom: 2rem;
+}
+
+.terms-container br {
+  content: "";
+  margin: 2rem;
+  display: block;
+  font-size: 24%;
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+  /* Header styling */
+
+  .header {
+    display: flex;
+    padding: initial;
+    width: 100vw;
+  }
+
+  .others {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 5rem;
+    padding-left: 1.5rem;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .mobile-items {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+
+  .ham {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: white;
+    transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+  .ham-bottom {
+    margin-top: -0.9rem;
+  }
+
+  .ham-last {
+    margin-top: -0.9rem;
+  }
+
+  .active .ham-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .active .ham-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  /* Home styling */
+
+  .home {
+    padding: 5rem 0;
+    padding-top: 0;
+    height: 100%;
+  }
+
+  .home-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: initial;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero:nth-child(1) {
+    padding: 0 2rem;
+  }
+
+  .store-img {
+    display: none;
+  }
+
+  .store-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .stores-img {
+    width: 35rem;
+    height: 32rem;
+    padding: initial;
+  }
+
+  .start {
+    text-align: center;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    padding-top: 12rem;
+  }
+
+  .start-para {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  /* Responsive anywhere, grow faster and small biz */
+
+  .any {
+    display: flex;
+    flex-direction: column;
+    padding: initial;
+    padding-bottom: 5rem;
+  }
+
+  .anywhere-text {
+    padding: 4rem 3rem;
+  }
+
+  .anywhere-top {
+    font-size: 3.6rem;
+  }
+
+  .not-techie {
+    margin-top: 3rem;
+  }
+
+  .anywhere-para {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .any-img {
+    display: none;
+  }
+
+  .all-img {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  .faster-text {
+    padding-top: 2rem;
+  }
+
+  .faster-img-div,
+  .a-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faster-img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .tech-img {
+    display: none;
+  }
+
+  .technical-img {
+    height: 27rem;
+    width: 30rem;
+    padding-top: 5rem;
+  }
+
+  .te-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-text {
+    padding-bottom: 0.1rem;
+    padding-top: 2rem;
+    margin-top: 0;
+  }
+
+  .small-biz {
+    padding-top: 0rem;
+  }
+
+  /* Responsive services component */
+
+  .sell-top {
+    font-size: 4.2rem;
+    width: 40rem;
+  }
+
+  .sell-today {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 4rem;
+    width: 40rem;
+  }
+
+  .card {
+    height: 40rem;
+    width: 32.5rem;
+  }
+
+  .card-text {
+    padding-bottom: 7rem;
+  }
+
+  /* Responsive footer */
+
+  .footer {
+    padding: 4rem;
+    height: 32.5rem;
+  }
+
+  .right {
+    padding-right: 13rem;
+    width: 12vw;
+  }
+
+  .iconify {
+    margin-left: 1rem;
+  }
+
+  .li,
+  .bottom-right,
+  .footer-co {
+    display: none;
+    flex-direction: column;
+  }
+
+  .f-badge {
+    height: 8rem;
+    width: 25rem;
+  }
+
+  .footer-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .copy {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
+
+  .titan-name {
+    padding-top: 2rem;
+  }
+  /* Pricing component responsive styling */
+
+  .pricing-first {
+    padding-bottom: 3rem;
+    padding-top: 12rem;
+  }
+
+  .pricing-first h1 {
+    font-size: 3.6rem;
+    text-align: center;
+    width: 35rem;
+  }
+
+  .pricing-first p {
+    font-size: 1.8rem;
+    width: 27.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .pricing-cards {
+    padding: 3rem 0;
+  }
+
+  .pricing-second h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    width: 35rem;
+  }
+
+  /* Responsive styling for Help.js */
+
+  .help-first {
+    width: 40rem;
+    padding: 12rem 0;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .help-first h1 {
+    font-size: 4.6rem;
+    text-align: center;
+    width: 40rem;
+  }
+
+  .help-second {
+    padding: 3rem 18.5rem;
+  }
+
+  .help-card {
+    padding: 5rem;
+    border: none;
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 40rem;
+    width: 50rem;
+    font-size: 1.8rem;
+    margin: 3rem;
+  }
+
+  .no {
+    display: flex;
+    width: 21rem;
+    text-align: center;
+  }
+
+  .tel {
+    padding-left: 3rem;
+  }
+
+  .social-para h1 {
+    text-align: center;
+    width: 30rem;
+    font-size: 2.6rem;
+  }
+
+  /* Signup.js */
+
+  .sign-img {
+    display: none;
+  }
+
+  .sign-up-container {
+    padding-top: 0.5rem;
+  }
+
+  .border-right {
+    display: none;
+  }
+
+  /* Terms of service */
+  .terms-container {
+    padding: initial;
+    padding: 13rem 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .terms-container h1 {
+    font-size: 3.2rem;
+  }
+
+  .terms-container h2 {
+    font-size: 2.8rem;
+  }
+
+  /* Instagram  */
+
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: initial;
+    padding: 12rem 0;
+    padding-bottom: 5rem;
+  }
+
+  .insta-right {
+    width: initial;
+    padding: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .insta-right h1 {
+    font-size: 3.2rem;
+    width: 30rem;
+  }
+
+  .insta-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .insta-home {
+    height: 35rem;
+    width: 30rem;
+    margin-left: initial;
+  }
+
+  .insta-second {
+    display: flex;
+    flex-direction: column;
+    padding: initial;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .insta-second-left {
+    padding: initial;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .insta-second-left h1 {
+    font-size: 3.3rem;
+  }
+
+  .insta-phone,
+  .insta-images small {
+    display: none;
+  }
+
+  .basket {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  .insta-sell {
+    padding: initial;
+    padding: 3rem 2rem;
+  }
+
+  .insta-sell h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  .insta-para-right {
+    padding: initial;
+    padding-top: 2rem;
+    width: initial;
+  }
+
+  .sells-para {
+    font-size: 1.6rem;
+  }
+
+  .insta-para-left {
+    width: initial;
+  }
+  .insta-paras {
+    flex-direction: column;
+    width: 30rem;
+    padding-right: 3rem;
+    margin-right: 1rem;
+  }
+
+  .insta-paras p {
+    width: 35rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  /* Sell everywhere */
+
+  .sell-everywhere {
+    height: 100%;
+    padding: 5rem 0;
+  }
+  .everywhere-top {
+    font-size: 3.2rem;
+    padding-bottom: 3rem;
+  }
+
+  .sell-top {
+    font-size: 3.6rem;
+  }
+
+  .top-sell {
+    padding: initial;
+    padding-top: 10rem;
+    font-size: 3.6rem;
+  }
+
+  .everywhere-reps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Facebook */
+
+  .facebook {
+    padding: initial;
+  }
+  .love-this {
+    padding: initial;
+    padding-bottom: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .facebook-start {
+    font-size: 3.2rem;
+  }
+  .facebook-home {
+    padding: 4rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .fourth-img-div,
+  .second-img-div,
+  .third-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fourth-img {
+    height: 32rem;
+    width: 32rem;
+    padding: initial;
+  }
+
+  .customer-items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .facebook-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .billion {
+    font-size: 3.2rem;
+  }
+
+  .double-para {
+    width: 100%;
+    padding: initial;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .facebook-para {
+    padding-left: 0;
+  }
+  .facebook-para p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .f-second {
+    padding: initial;
+  }
+
+  .facebook-second {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .second-img {
+    height: 35rem;
+    width: 32rem;
+  }
+
+  .facebook-manage {
+    padding: initial;
+  }
+
+  .facebook-manage h1 {
+    font-size: 3.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .facebook-manage p {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .facebook p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .zero-cost {
+    height: 100%;
+    padding: 5rem 2rem;
+  }
+
+  .zero-cost div:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .zero-cost h1 {
+    font-size: 2.8rem;
+  }
+
+  .advert {
+    padding: initial;
+    padding: 3rem 2rem;
+    height: 100%;
+  }
+
+  .facebook-advert {
+    padding: initial;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .third-img {
+    height: 30rem;
+    width: 30rem;
+  }
+  .advert-para {
+    padding: initial;
+    text-align: center;
+  }
+
+  .advert-para p {
+    padding-top: 2rem;
+  }
+
+  .advert-para h1,
+  .connect-para h1 {
+    padding: initial;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .advert h1 {
+    font-size: 3rem;
+  }
+
+  .fa-connect {
+    display: none;
+  }
+
+  .f-connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facebook-connect {
+    padding: initial;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .connect-para,
+  .insta-facebook {
+    padding: initial;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .connect-para p {
+    padding-top: 2rem;
+  }
+  .f-last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .facebook-cta {
+    height: 100%;
+    padding: 5rem 2rem;
+  }
+
+  .facebook-cta h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Titan Market */
+
+  .titan-first {
+    flex-direction: column;
+    padding: initial;
+    padding: 12rem 4rem;
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+
+  .titan-home-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titan-home {
+    height: 35rem;
+    width: 30rem;
+    display: none;
+  }
+
+  .t-home {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .titan-first .badge {
+    display: none;
+  }
+
+  .titan-first-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .titan-first h1 {
+    font-size: 2.5rem;
+    padding: initial;
+  }
+
+  .titan-first p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding: initial;
+    padding-top: 2rem;
+  }
+
+  .badge {
+    margin: initial;
+  }
+
+  .titan-second {
+    padding: 3rem 4rem;
+    padding-bottom: 0;
+  }
+
+  .titan-second-first h1 {
+    font-size: 3.2rem;
+  }
+
+  .titan-second-first p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .titan-images {
+    display: none;
+  }
+
+  .titan-cover-img {
+    height: 25rem;
+    width: 35rem;
+  }
+
+  .titan-third h1,
+  .titan-third p {
+    display: none;
+  }
+
+  .titan-fourth {
+    padding-top: 2rem;
+    padding: 2rem 4rem;
+  }
+  .titan-fourth h1 {
+    display: flex;
+    font-size: 2.5rem;
+  }
+
+  /* Shopify */
+
+  .shopify-first {
+    padding: initial;
+    flex-direction: column;
+    padding: 10rem 2rem;
+  }
+
+  .shopify-stores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shopify-stores h1 {
+    text-align: center;
+  }
+
+  .shopify-stores p {
+    display: none;
+  }
+  .shopify-first h1 {
+    font-size: 2.2rem;
+  }
+
+  .shopify-first h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .shopify-first p,
+  .google-second p,
+  .google-third p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .shopify-home-img {
+    margin-left: 0;
+    height: 30rem;
+    width: 35rem;
+  }
+
+  .shopify-home-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .shopify-second {
+    display: flex;
+    flex-direction: column;
+    padding: initial;
+    padding: 4rem;
+  }
+
+  .shopify-snip {
+    height: 30rem;
+    width: 35rem;
+    margin-left: 2rem;
+  }
+
+  .shopify-second h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .shopify-second h2 {
+    font-size: 1.8rem;
+  }
+
+  .shopify-second ul li h3 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+  .shopify-snip-div {
+    padding-top: 2rem;
+  }
+
+  .shopify-third {
+    height: 100%;
+    padding: 3rem;
+  }
+
+  .shopify-third h1 {
+    font-size: 3.2rem;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  /* Google.js component */
+
+  .google-first {
+    padding-top: 10rem;
+  }
+
+  .google-first h1 {
+    font-size: 3rem;
+    padding: 3rem;
+  }
+
+  .home-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .google-first img {
+    height: 25rem;
+    width: initial;
+    width: 35rem;
+  }
+
+  .google-second,
+  .google-third,
+  .google-fourth {
+    padding: initial;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .google-second h1,
+  .google-third h1 {
+    font-size: 2.8rem;
+  }
+
+  .google-second div:nth-child(1) {
+    padding: initial;
+  }
+
+  .google-second img,
+  .google-third img,
+  .unnamed-div img {
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .retail-div-first,
+  .unnamed-div-first,
+  .airbnb-div-first,
+  .control-img-div-first,
+  .automated-div {
+    display: none;
+  }
+
+  .retail-div,
+  .unnamed-div,
+  .airbnb-div,
+  .control-img-div,
+  .automated-div-first {
+    display: flex;
+  }
+
+  .google-third div:nth-child(2) {
+    padding: initial;
+  }
+
+  .google-fourth-second {
+    padding: initial;
+    padding: 0 4rem;
+  }
+
+  .google-fourth-second h1 {
+    font-size: 2.8rem;
+    padding: 3rem;
+  }
+
+  .google-fourth-second ul {
+    padding: 2rem 4rem;
+  }
+
+  .google-fourth-second ul li {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .google-btns {
+    flex-direction: column;
+  }
+
+  .google-btns a {
+    margin-bottom: 2rem;
+  }
+
+  /* Jumia.js component */
+
+  .jumia-first {
+    padding: 10rem;
+  }
+
+  .jumia-first img {
+    height: 22.5rem;
+    width: 37rem;
+  }
+
+  .jumia-second h1,
+  .jumia-third-second h1 {
+    font-size: 3.2rem;
+  }
+
+  .jumia-third {
+    padding: initial;
+    flex-direction: column;
+  }
+
+  .jumia-third img {
+    display: none;
+  }
+  .jumia-third-second {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Airbnb component */
+
+  .airbnb-first {
+    padding: 8rem 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .airbnb-first-img {
+    width: 30rem;
+    height: 35rem;
+    border-radius: initial;
+    margin: initial;
+  }
+
+  .airbnb-first-second {
+    padding: initial;
+    text-align: center;
+  }
+
+  .airbnb-first-second h1,
+  .airbnb-second h1 {
+    font-size: 3.2rem;
+  }
+
+  .airbnb-div {
+    margin-top: 3rem;
+  }
+
+  .airbnb-second {
+    padding: 5rem 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .airbnb-second h1 {
+    padding: 2rem;
+  }
+
+  .airbnb-second p {
+    padding: 4rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .airbnb-second div:nth-child(1) {
+    padding: initial;
+  }
+
+  .airbnb-second img {
+    display: none;
+  }
+
+  /* Amazon.js */
+
+  .amazon-first {
+    padding: initial;
+    padding: 3rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .amazon-first h1 {
+    font-size: 3.2rem;
+  }
+
+  .amazon-first-section {
+    width: initial;
+  }
+
+  .amazon-first-section p,
+  .amazon-second p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .amazon-first-images {
+    width: 40rem;
+    background: initial;
+    padding: initial;
+    margin-top: 3rem;
+  }
+
+  .amazon-first-images img {
+    width: 20rem;
+    height: 25rem;
+  }
+
+  .amazon-phone {
+    margin-left: 1rem;
+    padding-left: 2rem;
+  }
+  .amazon-second {
+    padding: 3rem 4rem;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .amazon-second h1 {
+    font-size: 3.2rem;
+    padding-top: initial;
+  }
+
+  .amazon-second img {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .control-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amazon-third h1 {
+    font-size: 3.2rem;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Mailchimp.js */
+
+  .mailchimp h1 {
+    font-size: 3.2rem;
+  }
+
+  .mailchimp-first {
+    padding: 10rem 4rem;
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+
+  .mailchimp-first img {
+    height: 32rem;
+    width: 35rem;
+    margin-right: 2rem;
+  }
+
+  .mailchimp-first p,
+  .mailchimp-third p,
+  .mailchimp-fourth p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .mailchimp-second {
+    height: 100%;
+    padding: 7rem;
+  }
+
+  .mailchimp-second img {
+    width: 25rem;
+  }
+
+  .mailchimp-third {
+    padding: 5rem 4rem;
+    flex-direction: column;
+  }
+
+  .mailchimp-third img {
+    height: 30rem;
+    width: 32.5rem;
+  }
+
+  .mailchimp-third div:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .mailchimp-fourth {
+    height: 100%;
+    text-align: center;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Website.js */
+
+  .website-first {
+    padding-bottom: 3rem;
+  }
+
+  .website-first p,
+  .website-second p,
+  .website-third p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .website-first h1,
+  .website-second h1,
+  .website-third h1 {
+    font-size: 3.2rem;
+  }
+
+  .website-first img {
+    width: 35rem;
+    height: 30rem;
+  }
+
+  .website-second {
+    padding: initial;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .website-second div:nth-child(1) {
+    padding: initial;
+  }
+
+  .website-second img {
+    height: 35rem;
+    width: 35rem;
+    margin-top: 3rem;
+  }
+
+  .website-third {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 5rem 4rem;
+    background: whitesmoke;
+  }
+}
